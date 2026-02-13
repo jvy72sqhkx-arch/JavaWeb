@@ -80,9 +80,9 @@
 `ServletOutputStream os = response.getOutputStream();`  
 *完成流的copy*  
 `byte[] buff = new byte[1024];`  
-`int Len = 0;`  
+`int len = 0;`  
 `while ((len = fis.read(buff)) != -1){`  
-`os.write(buff, off: 0,Len);`  
+`os.write(buff, off: 0,len);`  
 `//关闭`  
 `fis.close();`  
 `}`  
